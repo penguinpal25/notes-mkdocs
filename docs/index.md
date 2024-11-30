@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+---
+title: Homepage
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Welcome to My Notes!  
 
-## Commands
+Hi, I'm Vyshnavlal, a DevOps Engineer and System Administrator who loves Linux and learning new things. This site is a collection of my notes, guides, and documentation on topics I explore in my work and projects.  
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Feel free to look around—maybe you’ll find something helpful!  

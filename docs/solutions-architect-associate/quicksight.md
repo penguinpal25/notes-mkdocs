@@ -1,0 +1,19 @@
+# Amazon QuickSight
+- **Serverless machine-learning powered business intelligence service to create interactive dashboards**
+- Fast, automatically scalable, embeddable, with per-session pricing
+- Uses cases:
+  - Businesss analytics
+  - Building visualizations
+  - Perform ad-hoc analysis
+  - Get business insights using data
+- **In-memory computation using SPICE** engine if data is imported into QuickSight
+- Enterprise edition: Possibility to setup Column-level security (CLS)
+- Integrations:
+  - Data Sources (AWS Services): RDS, Aurora, Redshift, Athena, S3, OpenSearch, Timestream
+  - Data Source (SaaS): Salesforce, Jira
+  - On-premises databases (JDBC): teradata
+  - Data Sources (imports): xlsx, csv, json, tsv, ELF & CLF (log format)
+- We can define Users (standard version) and Groups (Enterprise version)
+- A dashboard is a read-only snapshot of an analysis that you can share
+- **You can share the analysis or the dashboard with Users or Groups**
+- To share a dashboard, you must first publish it
