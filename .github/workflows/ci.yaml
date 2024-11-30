@@ -21,3 +21,20 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
       - run: mkdocs gh-deploy --force
+
+      # Slack Notification for Deployment
+      - name: Send Slack Notification for Deployment
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}  # Add your webhook URL in GitHub secrets
+          SLACK_USERNAME: "GitHub Actions Bot"  # Optional: Set a custom name for the bot
+          SLACK_ICON_EMOJI: ":rocket:"  # Optional: Set a custom emoji for the bot
+          SLACK_MESSAGE: |
+            🚀 *GitHub Actions Deployment Notification* 🚀
+            Repository: `${{ github.repository }}`
+            Branch: `${{ github.ref_name }}`
+            Commit: `${{ github.sha }}`
+            Workflow: `${{ github.workflow }}`
+            Status: `${{ job.status }}`
+            Deployed URL: <${{ steps.deploy.outputs.page_url }}|Click to view the site>
+          SLACK_COLOR: ${{ job.status == 'success' && 'good' || 'danger' }}  # Set color to 'good' for success, 'danger' for failure
