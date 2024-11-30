@@ -36,5 +36,4 @@ jobs:
             Commit: `${{ github.sha }}`
             Workflow: `${{ github.workflow }}`
             Status: `${{ job.status }}`
-            Deployed URL: <${{ steps.deploy.outputs.page_url }}|Click to view the site>
           SLACK_COLOR: ${{ job.status == 'success' && 'good' || 'danger' }}  # Set color to 'good' for success, 'danger' for failure
